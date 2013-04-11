@@ -17,7 +17,8 @@ DPKG_RECONFIG="locales tzdata"
 SD_PATH="/dev/sdc"
 
 # MAC will be encoded in script.bin
-MAC_ADDRESS="0DEADBEEFBAD"
+#MAC_ADDRESS="0DEADBEEFBAD"
+MAC_ADDRESS="008010EDDF01"
 
 # If you want to use DHCP, use the following
 ETH0_MODE="dhcp"
@@ -257,13 +258,15 @@ if [ -b ${SD_PATH} ]; then
     bootStrap
     echoStage 7 "Installing Kernel"
     installKernel
-    echoStage 8 "Configuring U-Boot"
+    echoStage 8 "Configuring Kernel Modules"
+    configModules
+    echoStage 9 "Configuring U-Boot"
     configUBoot
-    echoStage 9 "Configuring Networking"
+    echoStage 10 "Configuring Networking"
     configNetwork
-    echoStage 10 "Formatting SD Card"
+    echoStage 11 "Formatting SD Card"
     formatSD
-    echoStage 11 "Transfering Debian to SD Card"
+    echoStage 12 "Transfering Debian to SD Card"
     installSD  
     echo ""
     echo "All done"
