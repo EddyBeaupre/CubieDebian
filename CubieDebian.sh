@@ -17,8 +17,7 @@ DPKG_RECONFIG="locales tzdata"
 SD_PATH="/dev/sdc"
 
 # MAC will be encoded in script.bin
-MAC_ADDRESS="008010EDDF01"
-#MAC_ADDRESS="0DEADBEEFBAD"
+MAC_ADDRESS="0DEADBEEFBAD"
 
 # If you want to use DHCP, use the following
 ETH0_MODE="dhcp"
