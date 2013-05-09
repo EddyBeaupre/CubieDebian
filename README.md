@@ -1,3 +1,8 @@
+Please use https://github.com/EddyBeaupre/armStrap instead
+==========================================================
+
+armStrap, while still early in its development, can do everything this script does and more. There will be no future version of this script, all development will be made in armStrap. This is kept only for historical purpose.
+
 CubieDebian
 ===========
 
